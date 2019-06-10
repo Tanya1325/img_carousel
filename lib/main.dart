@@ -41,11 +41,11 @@ class _ImageCarouselState extends State<ImageCarousel> with SingleTickerProvider
     Widget carousel = Carousel(
           boxFit: BoxFit.fitHeight,
           images: [
-            AssetImage('assets/flower.jpg'),
-            AssetImage('assets/rk.jpeg'),
-            AssetImage('assets/tree1.jpg'),
+            NetworkImage('https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'),
+            NetworkImage('https://images.pexels.com/photos/1086178/pexels-photo-1086178.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
+           NetworkImage('https://images.pexels.com/photos/259707/pexels-photo-259707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
           ],
-          dotColor: Colors.lightBlueAccent,
+         
           animationCurve: Curves.easeInOutCubic,
           animationDuration: Duration(seconds: 1),
            );
